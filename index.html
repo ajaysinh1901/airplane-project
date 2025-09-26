@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AeroLink Global | Login & Register</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+
+  <main class="auth-section">
+    <div class="auth-container">
+      <div class="auth-header">
+        <h1>Welcome to AeroLink Global</h1>
+        <p>Your premier destination for corporate aviation trading</p>
+      </div>
+      
+      <div class="auth-forms">
+        <!-- Login Form -->
+        <div class="auth-form-container glass" id="loginForm">
+          <h2>Sign In to Your Account</h2>
+          <form action="home.html" method="get">
+            <div class="form-group">
+              <label for="loginEmail">Email Address</label>
+              <input type="email" id="loginEmail" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="loginPassword">Password</label>
+              <input type="password" id="loginPassword" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary auth-btn">Sign In</button>
+          </form>
+          <p class="auth-switch">
+            Don't have an account? 
+            <a href="#" onclick="document.getElementById('loginForm').style.display='none'; document.getElementById('registerForm').style.display='block';">Sign up here</a>
+          </p>
+        </div>
+
+        <!-- Register Form -->
+        <div class="auth-form-container glass" id="registerForm" style="display: none;">
+          <h2>Create New Account</h2>
+          <form action="home.html" method="get">
+            <div class="form-group">
+              <label for="registerName">Full Name</label>
+              <input type="text" id="registerName" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="registerEmail">Email Address</label>
+              <input type="email" id="registerEmail" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="registerPhone">Phone Number</label>
+              <input type="tel" id="registerPhone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="registerPassword">Password</label>
+              <input type="password" id="registerPassword" name="password" required minlength="6">
+            </div>
+            <div class="form-group">
+              <label for="confirmPassword">Confirm Password</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" required minlength="6">
+            </div>
+            <button type="submit" class="btn btn-primary auth-btn">Create Account</button>
+          </form>
+          <p class="auth-switch">
+            Already have an account? 
+            <a href="#" onclick="document.getElementById('registerForm').style.display='none'; document.getElementById('loginForm').style.display='block';">Sign in here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 AeroLink Global. All rights reserved. | Developed by Tirth Sakhat</p>
+  </footer>
+</body>
+</html>

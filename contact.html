@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - AeroLink Global</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="sticky-header">
+    <nav class="navbar">
+      <a href="home.html" class="logo">AeroLink Global</a>
+      <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox" hidden>
+      <label for="mobile-menu-toggle" class="mobile-toggle" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="listings.html">Aircraft</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section contact-section">
+    <h1 class="animate-fade-up">Get in Touch</h1>
+    <p class="about-text animate-fade-up">Ready to buy, sell, or learn more about aircraft trading? Our expert team is here to help you navigate the aviation marketplace.</p>
+    
+    <div class="contact-content">
+      <div class="glass contact-glass animate-fade-left">
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a topic</option>
+              <option value="buying">Buying Aircraft</option>
+              <option value="selling">Selling Aircraft</option>
+              <option value="leasing">Leasing Services</option>
+              <option value="maintenance">Maintenance Services</option>
+              <option value="general">General Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your aviation needs..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      <br><br><br><br>
+
+      <div class="contact-info-box glass animate-fade-right">
+        <h3>Contact Information</h3>
+        <div class="contact-info-item">
+          <strong>Address</strong>
+          Bapunagar Char Rasta, Ahmedabad, Gujarat, India
+        </div>
+        <div class="contact-info-item">
+          <strong>Phone</strong>
+          <a href="tel:8200189222">+91 8200189222</a>
+        </div>
+        <div class="contact-info-item">
+          <strong>Email</strong>
+          <a href="mailto:info@aerolinkglobal.com">info@aerolinkglobal.com</a>
+        </div>
+        <div class="contact-info-item">
+          <strong>Business Hours</strong>
+          24/7 Operations (Sunday Closed for Office)
+        </div>
+        <div class="contact-info-item">
+          <strong>Service Areas</strong>
+          All Over Ahmedabad, 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="text-align:center;color:#003366;font-size:1.05em;padding:24px 0 18px 0;">Developed by Tirth Sakhat</div>
+  <script src="script.js"></script>
+</body>
+</html>
